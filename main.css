@@ -1,0 +1,59 @@
+.Element {
+    border: 3px solid greenyellow;
+    width: 550px;
+    margin: 230px auto;
+    font-size: 40px;
+    height: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Element:hover {
+    background-color: greenyellow;
+    border-radius: 5px;
+    transition: 350ms ease;
+}
+
+.Element::before {
+    content: 'Before';
+    border: 3px solid blue;
+    width: 450px;
+    height: 148px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.Element:hover::before {
+    background-color: blue;
+    transition: 350ms ease;
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.Element::after {
+    content: 'Before';
+    border: 3px solid red;
+    width: 450px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 100px;
+    font-size: 50px;
+    height: 148px;
+}
+
+.Element:hover::after {
+    background-color: red;
+    transition: 350ms ease;
+    color: lightcoral;
+    border-radius: 5px;
+}
